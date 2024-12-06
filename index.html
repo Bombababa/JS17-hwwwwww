@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./js.js"></script>
+
+    <input type="text" id="textInput" placeholder="Введіть текст">
+    <button id="changeTextButton">Змінити текст</button>
+
+
+    <h1>Заголовок</h1>
+    <img id="image" src="./oleg.png" alt="Старе зображення">
+
+
+    <a id="link" href="https://example.com">
+        <img id="linkImage" src="https://via.placeholder.com/150" alt="Оригінальне зображення">
+    </a>
+
+    <script>
+        // Отримуємо доступ до посилання та зображення
+        const link = document.getElementById('link');
+        const linkImage = document.getElementById('linkImage');
+
+        // Змінюємо атрибут 'href' на нову URL-адресу
+        link.href = './';
+
+        // Додаємо новий атрибут 'alt' до зображення
+        linkImage.alt = 'Нове зображення';
+    </script>
+
+
+<ul>
+    <li>Перший елемент списку</li>
+    <li>Другий елемент списку</li>
+    <li>Третій елемент списку</li>
+</ul>
+
+<script>
+    // Отримуємо доступ до першого елемента списку
+    const firstListItem = document.querySelector('ul li');
+
+    // Змінюємо текст першого елемента
+    firstListItem.textContent = 'Новий текст для першого елемента';
+</script>
+
+
+
+</body>
+</html>
