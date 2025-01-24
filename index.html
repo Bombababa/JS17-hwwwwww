@@ -3,51 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
 </head>
 <body>
-    <script src="./js.js"></script>
+    <!-- Перша задача: Кнопка та текстове поле -->
+    <h2>Зміна тексту кнопки</h2>
+    <input type="text" id="textField" placeholder="Введіть текст">
+    <button id="changeButton">Кнопка</button>
 
-    <input type="text" id="textInput" placeholder="Введіть текст">
-    <button id="changeTextButton">Змінити текст</button>
+    <!-- Друга задача: Заголовок та зображення -->
+    <h2>Зміна зображення</h2>
+    <h3 id="imageHeader">Головний заголовок</h3>
+    <img id="image" src="./keda ia popal.png" alt="Старе зображення" width="200">
 
-
-    <h1>Заголовок</h1>
-    <img id="image" src="./oleg.png" alt="Старе зображення">
-
-
-    <a id="link" href="https://example.com">
-        <img id="linkImage" src="https://via.placeholder.com/150" alt="Оригінальне зображення">
+    <!-- Третя задача: Посилання та зображення -->
+    <h2>Зміна посилання та додавання атрибута alt</h2>
+    <a id="link" href="https://github.com/">
+        <img id="linkImage" src="./penguins.png" width="200">
     </a>
 
-    <script>
-        // Отримуємо доступ до посилання та зображення
-        const link = document.getElementById('link');
-        const linkImage = document.getElementById('linkImage');
+    <!-- Четверта задача: Список -->
+    <h2>Зміна першого елемента списку</h2>
+    <ul id="itemList">
+        <li>Перший елемент</li>
+        <li>Другий елемент</li>
+        <li>Третій елемент</li>
+    </ul>
 
-        // Змінюємо атрибут 'href' на нову URL-адресу
-        link.href = './';
-
-        // Додаємо новий атрибут 'alt' до зображення
-        linkImage.alt = 'Нове зображення';
-    </script>
-
-
-<ul>
-    <li>Перший елемент списку</li>
-    <li>Другий елемент списку</li>
-    <li>Третій елемент списку</li>
-</ul>
-
-<script>
-    // Отримуємо доступ до першого елемента списку
-    const firstListItem = document.querySelector('ul li');
-
-    // Змінюємо текст першого елемента
-    firstListItem.textContent = 'Новий текст для першого елемента';
-</script>
-
-
-
+    <script src="./js.js"></script>
 </body>
 </html>
